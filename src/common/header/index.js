@@ -1,8 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { HeaderWrapper, Logo, Nav, NavItem, NavSearch, Addition, Button, SearchWrapper } from './style';
 import { CSSTransition } from 'react-transition-group';
 import { actionCreator } from './store';
+import { 
+    HeaderWrapper, 
+    Logo, 
+    Nav, 
+    NavItem, 
+    NavSearch, 
+    Addition, 
+    Button, 
+    SearchWrapper, 
+    SearchInfo, 
+    SearchInfoTitle,
+    SearchInfoSwitch,
+    SearchInfoItem
+} from './style';
 
 const Header = (props) => {
     const { focused, handleInputFocus, handleInputBlur } = props;
@@ -29,6 +42,20 @@ const Header = (props) => {
                         />
                     </CSSTransition>
                     <i className={focused ? 'iconfont focused' : 'iconfont'}>&#xe605;</i>
+                    { focused ? 
+                    <SearchInfo>
+                        <SearchInfoTitle>
+                            热门搜索
+                            <SearchInfoSwitch>换一批</SearchInfoSwitch>
+                        </SearchInfoTitle>
+                        <SearchInfoItem>教育</SearchInfoItem>
+                        <SearchInfoItem>教育</SearchInfoItem>
+                        <SearchInfoItem>教育</SearchInfoItem>
+                        <SearchInfoItem>教育</SearchInfoItem>
+                        <SearchInfoItem>教育</SearchInfoItem>
+                        <SearchInfoItem>教育</SearchInfoItem>
+                    </SearchInfo>
+                    : null }
                 </SearchWrapper>
             </Nav>
             <Addition>

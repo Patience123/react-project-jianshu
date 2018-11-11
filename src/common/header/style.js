@@ -17,6 +17,7 @@ export const Logo = styled.a.attrs({
     background: url(${LogoPic});
     background-size: contain;
 `
+
 export const Nav = styled.div`
     width: 960px;
     height: 100%;
@@ -49,6 +50,7 @@ export const NavItem = styled.div`
         }
     }
 `
+
 export const SearchWrapper = styled.div`
     float: left;
     position: relative;
@@ -65,6 +67,43 @@ export const SearchWrapper = styled.div`
             color: #fff;
         }
     }
+`
+
+export const SearchInfo = styled.div`
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 250px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+    overflow: hidden;
+`
+
+export const SearchInfoTitle = styled.div`
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    color: #969696;
+`
+
+export const SearchInfoSwitch = styled.span`
+    font-size: 13px;
+    float: right;
+`
+
+export const SearchInfoItem = styled.a`
+    float: left;
+    display: block;
+    line-height: 20px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #787878;
+    font-size: 12px;
 `
 
 export const NavSearch = styled.input.attrs({
@@ -101,12 +140,14 @@ export const NavSearch = styled.input.attrs({
         width: 160px;
     }
 `
+
 export const Addition = styled.div`
     position: absolute;
     right: 0;
     top: 0;
     height: 56px;
 `
+
 export const Button = styled.div`
     float: right;
     line-height: 38px;
