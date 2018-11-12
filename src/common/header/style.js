@@ -78,6 +78,8 @@ export const SearchInfo = styled.div`
     box-sizing: border-box;
     box-shadow: 0 0 8px rgba(0, 0, 0, .2);
     overflow: hidden;
+    background-color: #fff;
+    z-index: 100;
 `
 
 export const SearchInfoTitle = styled.div`
