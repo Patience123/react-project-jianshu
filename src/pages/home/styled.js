@@ -28,6 +28,7 @@ export const TopicWrapper = styled.div`
     padding: 0 0 10px 0;
     overflow: hidden;
     margin-left: -18px;
+    border-bottom: 1px solid #dcdcdc;
 `
 
 export const TopicItem = styled.div`
@@ -57,4 +58,51 @@ export const MoreTopic = styled.div`
     line-height: 32px;
     font-size: 14px;
     color: #787878;
+`
+
+// article-list-style
+export const ListItem = styled.div`
+    padding: 20px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #dcdcdc;
+    .list-pic {
+        width: 125px;
+        height: 100px;
+        display: block;
+        float: right;
+        border-radius: 10px;
+    }
+`
+export const ListInfo = styled.div`
+    width: 500px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    margin-bottom: 8px;
+    float: left;
+    .title {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 27px;
+        color: #333;
+        margin-bottom: 4px;
+    }
+    .desc {
+        font-size: 13px;
+        line-height: 24px;
+        color: #999;
+        word-wrap: break-word;
+    }
+`
+
+export const ListMeta = styled.div`
+    line-height: 20px;
+    font-size: 12px;
+    color: #999;
+    span {
+        margin-right: 10px;
+    }
+    .iconfont {
+        font-size: 12px;
+        margin-right: 2px;
+    }
 `
