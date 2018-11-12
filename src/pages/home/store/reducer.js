@@ -42,6 +42,48 @@ const defaultState = fromJS({
         nickName: '南方姑娘谭檬',
         commentNum: 7,
         likeNum: 26
+    }],
+    RecommendList: [{
+        RecommendId: 1,
+        RecommendImg: '//cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png'
+    }, {
+        RecommendId: 2,
+        RecommendImg: '//cdn2.jianshu.io/assets/web/banner-s-4-b70da70d679593510ac93a172dfbaeaa.png'
+    }, {
+        RecommendId: 3,
+        RecommendImg: '//cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png'
+    }, {
+        RecommendId: 4,
+        RecommendImg: '//cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png'
+    }, {
+        RecommendId: 5,
+        RecommendImg: '//cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png'
+    }],
+    writerList: [{
+        writerId: 1,
+        avatorImg: '//upload.jianshu.io/users/upload_avatars/2153206/4b7d9e0d-2e6b-4757-b5a9-a76737c5aeff.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp',
+        name: '狼医生',
+        desc: '写了392.4k字 · 2k喜欢'
+    }, {
+        writerId: 2,
+        avatorImg: '//upload.jianshu.io/users/upload_avatars/8723996/5b2500d0-9768-4d3e-831c-47526ec444ed.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp',
+        name: '旸晓昆',
+        desc: '写了112.6k字 · 326喜欢'
+    }, {
+        writerId: 3,
+        avatorImg: '//upload.jianshu.io/users/upload_avatars/8723996/5b2500d0-9768-4d3e-831c-47526ec444ed.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp',
+        name: '旸晓昆',
+        desc: '写了112.6k字 · 326喜欢'
+    }, {
+        writerId: 4,
+        avatorImg: '//upload.jianshu.io/users/upload_avatars/8723996/5b2500d0-9768-4d3e-831c-47526ec444ed.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp',
+        name: '旸晓昆',
+        desc: '写了112.6k字 · 326喜欢'
+    }, {
+        writerId: 5,
+        avatorImg: '//upload.jianshu.io/users/upload_avatars/8723996/5b2500d0-9768-4d3e-831c-47526ec444ed.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp',
+        name: '旸晓昆',
+        desc: '写了112.6k字 · 326喜欢'
     }]
 });
 

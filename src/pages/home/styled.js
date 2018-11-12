@@ -5,12 +5,14 @@ export const HomeWrapper = styled.div`
     overflow: hidden;
     margin: 0 auto;
     margin-top: 30px;
+    box-sizing: border-box;
 `
 
 export const HomeLeft = styled.article`
     float: left;
-    width: 625px;
-    margin-right: 15px;
+    width: 640px;
+    box-sizing: border-box;
+    padding-left: 15px;
     .banner-img {
         width: 100%;
         height: 270px;
@@ -20,7 +22,8 @@ export const HomeLeft = styled.article`
 
 export const HomeRight = styled.aside`
     float: right;
-    width: 320px;
+    width: 280px;
+    margin-left: 40px;
 `
 
 // Topic-style
@@ -105,4 +108,86 @@ export const ListMeta = styled.div`
         font-size: 12px;
         margin-right: 2px;
     }
+`
+
+// Recommend-style
+export const RecommendWrapper = styled.div`
+    padding-bottom: 4px;
+    margin-top: -4px;
+    img {
+        width: 100%;
+        display: block;
+        height: 50px;
+        margin-bottom: 6px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+`
+
+// Writer-style
+export const WriterWrapper = styled.div`
+    margin-top: 30px;
+    position: relative;
+`
+
+export const WriterHeader = styled.div`
+    width: 100%;
+    line-height: 20px;
+    font-size: 14px;
+    color: #969696;
+    div {
+        float: right;
+        cursor: pointer;
+    }
+`
+
+export const WriterItem = styled.div`
+    margin-top: 20px;
+    overflow: hidden;
+    img {
+        float: left;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #ddd;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    div {
+        float: left;
+        box-sizing: border-box;
+        padding-top: 5px;
+        line-height: 20px;
+        margin-right: 50px;
+        .name {
+            font-size: 14px;
+            color: #333;
+        }
+        .desc {
+            margin-top: 2px;
+            font-size: 12px;
+            color: #969696;
+        }
+    }
+    .add {
+        float: right;
+        margin-top: 5px;
+        font-size: 13px;
+        color: #42c02e;
+        display: block;
+    }
+`
+
+export const LookAll = styled.div`
+    margin-top: 20px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    padding: 7px;
+    width: 275px;
+    font-size: 13px;
+    color: #787878;
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    text-align: center;
 `
