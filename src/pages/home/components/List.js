@@ -1,6 +1,7 @@
 import React, { PureComponent, Fragment } from 'react';
 import { connect } from "react-redux";
 import { actionCreator } from '../store';
+import { Link } from 'react-router-dom';
 import {
     ListItem,
     ListInfo,
@@ -22,7 +23,9 @@ class List extends PureComponent {
                                 alt={item.get('articleId')}
                             />
                             <ListInfo>
-                                <h3 className="title">{item.get('articleTitle')}</h3>
+                                <Link to='/detail'>
+                                    <h3 className="title">{item.get('articleTitle')}</h3>
+                                </Link>
                                 <p className="desc">
                                     {item.get('articleDesc')}
                                 </p>

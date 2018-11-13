@@ -111,6 +111,9 @@ export const ListInfo = styled.div`
         color: #999;
         word-wrap: break-word;
     }
+    a {
+        text-decoration: none;
+    }
 `
 
 export const ListMeta = styled.div`
