@@ -4,7 +4,7 @@ export const HomeWrapper = styled.div`
     width: 960px;
     overflow: hidden;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 86px;
     box-sizing: border-box;
 `
 
