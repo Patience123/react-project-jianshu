@@ -110,6 +110,21 @@ export const ListMeta = styled.div`
     }
 `
 
+export const LoadMore = styled.div`
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    line-height: 20px;
+    padding: 10px 15px;
+    margin: 30px 0 60px 0;
+    border-radius: 20px;
+    background: #a5a5a5;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+`
+
 // Recommend-style
 export const RecommendWrapper = styled.div`
     padding-bottom: 4px;
