@@ -26,7 +26,7 @@ class List extends PureComponent {
                                 /> : null
                             }
                             <ListInfo>
-                                <Link to='/detail'>
+                                <Link to={'/detail/' + item.get('articleId')}>
                                     <h3 className="title">{item.get('articleTitle')}</h3>
                                 </Link>
                                 <p className="desc">

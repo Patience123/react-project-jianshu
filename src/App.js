@@ -14,7 +14,7 @@ class App extends Component {
 					<React.Fragment>
 						<Heador />
 						<Route path="/" exact component={Home} />
-						<Route path="/detail" exact component={Detail} />
+						<Route path="/detail/:id" exact component={Detail} />
 					</React.Fragment>
 				</BrowserRouter>
 			</Provider>

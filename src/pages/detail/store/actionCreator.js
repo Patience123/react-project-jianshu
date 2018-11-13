@@ -7,9 +7,9 @@ const initialDetail = (result) => ({
     articleContent: result.articleContent
 })
 
-export const getDetailAction = () => {
+export const getDetailAction = (articleId) => {
     return (dispatch) => {
-        axios.get('/api/detail.json').then(res => {
+        axios.get('/api/detail.json?articleId=' + articleId).then(res => {
             let result = res.data.detailData;
             if(res.data.success && result) {
                 dispatch(initialDetail(result));
