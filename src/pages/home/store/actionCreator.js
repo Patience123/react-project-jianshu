@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GET_HOME_DATA, GET_HOME_LIST } from './actionTypes';
+import { GET_HOME_DATA, GET_HOME_LIST, CHANGE_BACK_TOP } from './actionTypes';
 
 const initialHomeData = (result) => ({
     type: GET_HOME_DATA,
@@ -40,3 +40,8 @@ export const getMoreList = (page) => {
         })
     }
 }
+
+export const changeShowBackTop = (toggle) => ({
+    type: CHANGE_BACK_TOP,
+    toggle: toggle
+});

@@ -1,12 +1,13 @@
 import { fromJS } from 'immutable';
-import { GET_HOME_DATA, GET_HOME_LIST } from './actionTypes';
+import { GET_HOME_DATA, GET_HOME_LIST, CHANGE_BACK_TOP } from './actionTypes';
 
 const defaultState = fromJS({
     topicList: [],
     articleList: [],
     RecommendList: [],
     writerList: [],
-    listPage: 1
+    listPage: 1,
+    showBackTop: false
 });
 
 export default (state = defaultState, action) => {
@@ -23,6 +24,8 @@ export default (state = defaultState, action) => {
                 articleList: state.get('articleList').concat(fromJS(action.articleList)),
                 listPage: fromJS(action.listPage)
             });
+        case CHANGE_BACK_TOP:
+            return state.set('showBackTop', action.toggle);
         default:
             return state;
     }

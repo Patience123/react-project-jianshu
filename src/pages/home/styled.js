@@ -26,6 +26,22 @@ export const HomeRight = styled.aside`
     margin-left: 40px;
 `
 
+export const BackTop = styled.div`
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+`
+
 // Topic-style
 export const TopicWrapper = styled.div`
     padding: 0 0 10px 0;

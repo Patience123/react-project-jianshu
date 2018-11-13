@@ -8,12 +8,26 @@ import Writer from './components/Writer';
 import {
     HomeWrapper,
     HomeLeft,
-    HomeRight
+    HomeRight,
+    BackTop
 } from './styled';
 
 class Home extends Component {
     componentDidMount() {
         this.props.gethomeData();
+        this.bindEvent();
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.props.changeShowBackTop);
+    }
+
+    bindEvent() {
+        window.addEventListener('scroll', this.props.changeShowBackTop);
+    }
+
+    handleBackTop() {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }
 
     render() {
@@ -28,6 +42,7 @@ class Home extends Component {
                     <Recommend></Recommend>
                     <Writer></Writer>
                 </HomeRight>
+                {this.props.showBackTop ? <BackTop onClick={this.handleBackTop}>回到顶部</BackTop> : null }
             </HomeWrapper>
         )
     }
@@ -36,7 +51,18 @@ class Home extends Component {
 const mapDispatchToProps = (dispatch) => ({
     gethomeData() {
         dispatch(actionCreator.getHomeDataAction());
+    },
+    changeShowBackTop(e) {
+        if(document.documentElement.scrollTop > 200) {
+            dispatch(actionCreator.changeShowBackTop(true));
+        } else {
+            dispatch(actionCreator.changeShowBackTop(false));
+        }
     }
+});
+
+const mapStateToProps = (state) => ({
+    showBackTop: state.getIn(['home', 'showBackTop'])
 })
 
-export default connect(null, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
