@@ -90,14 +90,13 @@ export const ListItem = styled.div`
         display: block;
         float: right;
         border-radius: 10px;
+        margin-left: 20px;
     }
 `
 export const ListInfo = styled.div`
-    width: 500px;
     box-sizing: border-box;
     padding-right: 20px;
     margin-bottom: 8px;
-    float: left;
     .title {
         font-size: 18px;
         font-weight: bold;
