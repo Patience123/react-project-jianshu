@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { actionCreator } from '../detail/store';
 import {
@@ -43,4 +44,4 @@ const mapDispatchToPrps = (dispatch) => ({
     }
 })
 
-export default connect(mapStateToProps, mapDispatchToPrps)(Detail);
+export default connect(mapStateToProps, mapDispatchToPrps)(withRouter(Detail));
