@@ -43,6 +43,9 @@ export const NavItem = styled.div`
         .iconfont {
             font-size: 24px;
         }
+        &:hover {
+            background-color: #f5f5f5;
+        }
     }
     &.active {
         color: #ea6f5a;
